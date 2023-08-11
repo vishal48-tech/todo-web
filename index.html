@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div>
+    <input type="text" id="todo-title" placeholder="Title" autocomplete="off">
+    <input type="text" id="todo-desc" placeholder="Description" autocomplete="off">
+    <button onclick="addTodo()" class="btn" id="add">Add</button><br>
+  </div>
+  <div id="search-container">
+    <input type="search" id="todo-search" placeholder="Search" autocomplete="off">
+  </div>
+  <div>
+    <p id="response"></p>
+  </div>
+  <div>
+    <div id="todo-head">
+      <p class="grid-item">Title</p>
+      <p class="grid-item">Description</p>
+      <p class="grid-item">Action</p>
+    </div>
+  </div>
+  <div>
+    <div id="todo-list">
+    </div>
+  </div>
+  
+ <!-- modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <div id="modal-head">
+        <h2>Edit Todo</h2>
+        <span class="close">&times;</span>
+      </div>
+      <input type="text" id="editInput" placeholder="Edit your todo...">
+      <button id="saveEdit" class="btn">Save</button>
+    </div>
+  </div>
+  
+</body>
+
+</html>
